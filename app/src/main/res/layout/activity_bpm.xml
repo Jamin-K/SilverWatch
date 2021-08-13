@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BpmActivity"
+    android:orientation="vertical"
+    android:background="#303030">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_state"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:background="@drawable/round_button"
+        android:layout_centerInParent="true"
+        android:text="휴식중"
+        />
+
+
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/shape" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="200dp"
+                android:src="@drawable/heart"/>
+
+            <EditText
+                android:id="@+id/et_bpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:layout_centerInParent="true"
+                android:textSize="100dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:layout_centerInParent="true"
+                android:paddingTop="200dp"
+                android:textSize="50dp"
+                android:textColor="#939393"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

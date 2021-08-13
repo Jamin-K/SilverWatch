@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="#303030">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="200dp"
+        android:id="@+id/rg_sex">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:paddingLeft="100dp"
+            android:paddingRight="50dp"
+            android:textColor="#939393"
+            />
+
+
+        <RadioButton
+            android:id="@+id/rbtn_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남"
+            android:textColor="#939393"
+            />
+        <RadioButton
+            android:id="@+id/rbtn_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여"
+            android:textColor="#939393"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이"
+            android:textColor="#939393"
+            android:paddingLeft="100dp"
+            android:paddingRight="50dp"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            android:backgroundTint="#4CBF99"
+            android:layout_width="180dp"
+            android:textColor="#939393"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:paddingRight="50dp"
+            android:textColor="#939393"
+            android:text="이름" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="180dp"
+            android:backgroundTint="#4CBF99"
+            android:textColor="#939393"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:paddingRight="40dp"
+            android:textColor="#939393"
+            android:text="보호자\n연락처\n"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="180dp"
+            android:backgroundTint="#4CBF99"
+            android:textColor="#939393"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_admit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/round_button"
+            android:layout_centerInParent="true"
+            android:text="가입"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
